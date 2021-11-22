@@ -1,0 +1,1000 @@
+ 1038  cd ..
+ 1039  rm -rf REVIEWS
+ 1040  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | awk -F "\t" '{printf "%s,%s\n", $13, $14 > "REVIEWS/" $2 ".txt"}'
+ 1041  ls
+ 1042  mkdir REVIEWS
+ 1043  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 > "REVIEWS/" $2 ".txt"}'
+ 1044  l
+ 1045  cd REVIEWS
+ 1046  ls
+ 1047  cd ..
+ 1048  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -100 | awk -F "\t" '{printf "$9"}'
+ 1049  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | awk -F "\t" '{print $9}'
+ 1050  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -10| awk -F "\t" '{print $9}'
+ 1051  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | head -100 | awk -F "\t" '{printf "$9"}'
+ 1052  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | head -100 | awk -F "\t" '{printf $9}'
+ 1053  history
+ 1054  l
+ 1055  head -n 10 amazon_reviews_us_Books_v1_02.headerless.tsv 
+ 1056  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv
+ 1057  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}
+ 1058  '
+ 1059  l /REVIEWS
+ 1060  l /REVIEW
+ 1061  l
+ 1062  l REVIEWS
+ 1063  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"REVIEWS/" $2 ".txt"}'
+ 1064  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"UNHELPFUL/" $2 ".txt"}'
+ 1065  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 10 | awk -F "\t" '{print $9}'
+ 1066  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 100 | awk -F "\t" '{print $9}'
+ 1067  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}
+ 1068  '
+ 1069  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1070  head -n 10 amazon_reviews_us_Books_v1_02.headerless.tsv 
+ 1071  head -n 10 amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1072  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1073  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1074  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1075  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1076  head -n 500 amazon_reviews_us_Books_v1_02.tsv| grep -v helpful_vo  > amazon_reviews_us_Books_v1_02.500lines.tsv 
+ 1077  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1078  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |tail -n 10 | awk -F "\t" '{print $9}'
+ 1079  rm -r REVIEWS UNHELPFUL
+ 1080  l
+ 1081  mkdir REVIEWS UNHELPFUL
+ 1082  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |head -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"UNHELPFUL/" $2 ".txt"}'
+ 1083  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |tail -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"REVIEWS/" $2 ".txt"}'
+ 1084  cd REVIEWS
+ 1085  l
+ 1086  cd ..
+ 1087  l
+ 1088  cd REVIEWS
+ 1089  l
+ 1090  cat 12065385.txt
+ 1091  for i in l; do sed "s/ing / /g" $i.txt; done
+ 1092  for i in ls; do sed "s/ing / /g" $i.txt; done
+ 1093  for file in ls; do sed "s/ing / /g" $file.txt; done
+ 1094  ls
+ 1095  for file in *; do sed "s/ing / /g" $file.txt; done
+ 1096  l
+ 1097  for file in *; do sed "s/ing / /g" $file.txt; done
+ 1098  for file in *; do sed "s/ing / /g" $file; done
+ 1099  l
+ 1100  cat 12065385.txt
+ 1101  sed "s/ing / /g" 12065385.txt
+ 1102  vi test.txt
+ 1103  cat test.txt
+ 1104  sed "s/ing / /g" test.txt
+ 1105  cat 12065385.txt
+ 1106  sed "s/ing / /g" 12065385.txt
+ 1107  sed "s/ing /s / /g" test.txt
+ 1108  sed "s/ing /s/s / /g" test.txt
+ 1109  sed "s/ing / / /g" test.txt
+ 1110  sed "s/ing / /g" test.txt
+ 1111  sed "s/ing /s /g" test.txt
+ 1112  sed "s/ing,s / /g" test.txt
+ 1113  sed "s/ / /g" test.txt
+ 1114  sed "s/ing /s /g" test.txt
+ 1115  sed "s/s / /g" test.txt | 
+ 1116  sed "s/s / /g" 
+ 1117  sed "s/ing /s /g" test.txt
+ 1118  sed "s/ing / /g" test.txt
+ 1119  sed "s/ing\s/s  / /g" test.txt
+ 1120  sed "s/ing\s  / /g" test.txt
+ 1121  sed "s/ing / /g" test.txt
+ 1122  sed "s/ing/s / /g" test.txt
+ 1123  sed "s/ing / /g" test.txt| sed "s/ing / /g"
+ 1124  sed "s/ing / /g" test.txt| sed "s/s / /g"
+ 1125  sed "s/ing / /g" -e  "s/s / /g" test.txt
+ 1126  sed "s/ing / /g" test.txt| sed "s/ing / /g"
+ 1127  sed "s/ing / /g" test.txt| sed "s/s / /g"
+ 1128  vi test.txt
+ 1129  sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"
+ 1130  sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"
+ 1131  for file in *; do sed "s/ing / /g" $file.txt| sed "s/s / /g"| sed "s/ed / /g"; done
+ 1132  l
+ 1133  cat 12066457.txt
+ 1134  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"; done
+ 1135  cat 12066457.txt
+ 1136  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"> file.lemmatized.txt; done
+ 1137  cat 12066457.txt
+ 1138  l
+ 1139  rm file.lemmatized.txt
+ 1140  cat 12066457.txt
+ 1141  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"> $file.lemmatized.txt; done
+ 1142  cat 12066457.lemmatized.txt
+ 1143  l
+ 1144  cat 12066457.txt
+ 1145  cat 12066457.txt.lemmatized.txt
+ 1146  for file in *; do sed -r "s/ing[ ;.,]/ /g" $file> $file.stop; done
+ 1147  cd ..
+ 1148  l
+ 1149  head training.1600000.processed.noemoticon.csv 
+ 1150  vi script.sh
+ 1151  nano script.sh
+ 1152  cat script.sh
+ 1153  cp training.1600000.processed.noemoticon.csv /REVIEWS
+ 1154  l
+ 1155  cp training.1600000.processed.noemoticon.csv REVIEWS
+ 1156  cd REVEIWS
+ 1157  cd REVIEWS
+ 1158  l
+ 1159  mkdir TWEETS
+ 1160  for in in {1..100}; do echo $i; sed -n "${$i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1161  for in in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1162  l
+ 1163  ls
+ 1164  cd TWEETS
+ 1165  l
+ 1166  cd ..
+ 1167  for in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1168  for i in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1169  head -n 200 training.1600000.processed.noemoticon.csv > twitter.200.csv
+ 1170  for i in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1171  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > /TWEETS/tweet.$i.csv;done;
+ 1172  l
+ 1173  head -n 10 twitter.200.csv 
+ 1174  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > /TWEETS/tweet.$i.csv;done;
+ 1175  l
+ 1176  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > TWEETS/tweet.$i.csv;done;
+ 1177  rm -r TWEETS
+ 1178  mkdir TWEETS
+ 1179  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "," '{print$6' | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1180  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "," '{print$6'} | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1181  cd TWEETS
+ 1182  l
+ 1183  cat tweet.100.csv
+ 1184  cd ..
+ 1185  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "\",\"" '{print$6'} | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1186  cd ..
+ 1187  cd REVIEWS/TWEETS
+ 1188  l
+ 1189  cat tweet.100.txt
+ 1190  cat tweet.100.csv
+ 1191  cd ..
+ 1192  comm -12 <(tr " " "\n" < ../ | sort) <(tr " " "\n" < tweet.100.csv | sort)
+ 1193  l
+ 1194  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort)
+ 1195  common = 'comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1196  common= 'comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1197  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort)
+ 1198  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l
+ 1199  common='comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1200  $echo $common
+ 1201  echo $common
+ 1202  common=`comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l`
+ 1203  echo $common
+ 1204  cd ..
+ 1205  nano script.sh
+ 1206  ca script.sh
+ 1207  cat script.sh
+ 1208  cd REVIEWS
+ 1209  if [ $common -gt 1 ]; then cat TWEETS/tweet.100.csv >> 53096219.txt.lemmatized.txt.stop; fi
+ 1210  cat 53096219.txt.lemmatized.txt.stop
+ 1211  for i in *.txt.lemmatized.txt.stop ; do sh myscript $i twitterfile  ; done
+ 1212  for i in *.txt.lemmatized.txt.stop ; do sh ../script.sh $i twitterfile  ; done
+ 1213  cd ..
+ 1214  nano script.sh
+ 1215  cat script.sh
+ 1216  cd REVIEWS
+ 1217  cd..
+ 1218  cd ..
+ 1219  comm -12 <(tr " " "\n" < /REVIEWS/ | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1220  l REVIEWS
+ 1221  comm -12 <(tr " " "\n" < /REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1222  comm -12 <(tr " " "\n" < REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1223  cat script.sh
+ 1224  cd REVIEWS
+ 1225  for i in *.txt.lemmatized.txt.stop ; do sh ../script.sh $i twitterfile  ; done
+ 1226  for i in *.txt.lemmatized.txt.stop ; do sh ~/A4/script.sh $i twitterfile  ; done
+ 1227  for i in *.txt.lemmatized.txt.stop ; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done
+ 1228  comm -12 <(tr " " "\n" < REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1229  l
+ 1230  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1231  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort)
+ 1232  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wccomm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc
+ 1233  for i in *.txt.lemmatized.txt.stop ; for j in `/TWEETS/*`; docomm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc  ; done; done
+ 1234  for i in *.txt.lemmatized.txt.stop ;do for j in `/TWEETS/*`; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done; done
+ 1235  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done; done
+ 1236  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*; do sh ~/A4/script.sh $i $j ; done; done
+ 1237  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;  ; done; done
+ 1238  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc  ; done; done
+ 1239  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1240  for i in *.txt.lemmatized.txt.stop ;do for j in `/TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1241  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1242  ls TWEETS/*
+ 1243  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1244  for i in *.txt.lemmatized.txt.stop ;do for j in 'ls /TWEETS/*';do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1245  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1246  ls TWEETS/*
+ 1247  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1248  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1249  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm -12 <(tr \" \" \"\n" < $i | sort) <(tr \" \" \"\n" < $j | sort) | sort | uniq -c | wc"  ; done; done >commands.txt
+ 1250  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1251  l
+ 1252  wget http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip
+ 1253  l
+ 1254  unzip trainingandtestdata.zip
+ 1255  l
+ 1256  mkdir REVIEWS UNHELPFUL
+ 1257  head -n 1 training.1600000.processed.noemoticon.csv 
+ 1258  cd ..
+ 1259  cd A2
+ 1260  l
+ 1261  cp amazon_reviews_us_Books_v1_02.tsv ~/A4
+ 1262  cd ~/A4
+ 1263  l
+ 1264  head head -n 100 amazon_reviews_us_Books_v1_02.tsv > amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1265  head -n 100 amazon_reviews_us_Books_v1_02.tsv > amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1266  head -n 101 amazon_reviews_us_Books_v1_02.tsv| grep -v helpful_vo  > amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1267  head -2 amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1268  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100l.tsv | awk -f "\t" '{print 9}'
+ 1269  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | awk -f "\t" '{print $9}'
+ 1270  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | awk -F "\t" '{print $9}'
+ 1271  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | awk -F "\t" '{printf "%s,%s\n", $13, $14 > "REVIEWS/" $2 ".txt"}'
+ 1272  l
+ 1273  cd REVIEWS
+ 1274  l
+ 1275  cd ..
+ 1276  rm -rf REVIEWS
+ 1277  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | awk -F "\t" '{printf "%s,%s\n", $13, $14 > "REVIEWS/" $2 ".txt"}'
+ 1278  ls
+ 1279  mkdir REVIEWS
+ 1280  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 > "REVIEWS/" $2 ".txt"}'
+ 1281  l
+ 1282  cd REVIEWS
+ 1283  ls
+ 1284  cd ..
+ 1285  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -100 | awk -F "\t" '{printf "$9"}'
+ 1286  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | awk -F "\t" '{print $9}'
+ 1287  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -10| awk -F "\t" '{print $9}'
+ 1288  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | head -100 | awk -F "\t" '{printf "$9"}'
+ 1289  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | head -100 | awk -F "\t" '{printf $9}'
+ 1290  history
+ 1291  l
+ 1292  head -n 10 amazon_reviews_us_Books_v1_02.headerless.tsv 
+ 1293  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv
+ 1294  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}
+ 1295  '
+ 1296  l /REVIEWS
+ 1297  l /REVIEW
+ 1298  l
+ 1299  l REVIEWS
+ 1300  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"REVIEWS/" $2 ".txt"}'
+ 1301  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"UNHELPFUL/" $2 ".txt"}'
+ 1302  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 10 | awk -F "\t" '{print $9}'
+ 1303  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 100 | awk -F "\t" '{print $9}'
+ 1304  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}
+ 1305  '
+ 1306  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1307  head -n 10 amazon_reviews_us_Books_v1_02.headerless.tsv 
+ 1308  head -n 10 amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1309  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1310  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1311  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1312  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1313  head -n 500 amazon_reviews_us_Books_v1_02.tsv| grep -v helpful_vo  > amazon_reviews_us_Books_v1_02.500lines.tsv 
+ 1314  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1315  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |tail -n 10 | awk -F "\t" '{print $9}'
+ 1316  rm -r REVIEWS UNHELPFUL
+ 1317  l
+ 1318  mkdir REVIEWS UNHELPFUL
+ 1319  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |head -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"UNHELPFUL/" $2 ".txt"}'
+ 1320  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |tail -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"REVIEWS/" $2 ".txt"}'
+ 1321  cd REVIEWS
+ 1322  l
+ 1323  cd ..
+ 1324  l
+ 1325  cd REVIEWS
+ 1326  l
+ 1327  cat 12065385.txt
+ 1328  for i in l; do sed "s/ing / /g" $i.txt; done
+ 1329  for i in ls; do sed "s/ing / /g" $i.txt; done
+ 1330  for file in ls; do sed "s/ing / /g" $file.txt; done
+ 1331  ls
+ 1332  for file in *; do sed "s/ing / /g" $file.txt; done
+ 1333  l
+ 1334  for file in *; do sed "s/ing / /g" $file.txt; done
+ 1335  for file in *; do sed "s/ing / /g" $file; done
+ 1336  l
+ 1337  cat 12065385.txt
+ 1338  sed "s/ing / /g" 12065385.txt
+ 1339  vi test.txt
+ 1340  cat test.txt
+ 1341  sed "s/ing / /g" test.txt
+ 1342  cat 12065385.txt
+ 1343  sed "s/ing / /g" 12065385.txt
+ 1344  sed "s/ing /s / /g" test.txt
+ 1345  sed "s/ing /s/s / /g" test.txt
+ 1346  sed "s/ing / / /g" test.txt
+ 1347  sed "s/ing / /g" test.txt
+ 1348  sed "s/ing /s /g" test.txt
+ 1349  sed "s/ing,s / /g" test.txt
+ 1350  sed "s/ / /g" test.txt
+ 1351  sed "s/ing /s /g" test.txt
+ 1352  sed "s/s / /g" test.txt | 
+ 1353  sed "s/s / /g" 
+ 1354  sed "s/ing /s /g" test.txt
+ 1355  sed "s/ing / /g" test.txt
+ 1356  sed "s/ing\s/s  / /g" test.txt
+ 1357  sed "s/ing\s  / /g" test.txt
+ 1358  sed "s/ing / /g" test.txt
+ 1359  sed "s/ing/s / /g" test.txt
+ 1360  sed "s/ing / /g" test.txt| sed "s/ing / /g"
+ 1361  sed "s/ing / /g" test.txt| sed "s/s / /g"
+ 1362  sed "s/ing / /g" -e  "s/s / /g" test.txt
+ 1363  sed "s/ing / /g" test.txt| sed "s/ing / /g"
+ 1364  sed "s/ing / /g" test.txt| sed "s/s / /g"
+ 1365  vi test.txt
+ 1366  sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"
+ 1367  sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"
+ 1368  for file in *; do sed "s/ing / /g" $file.txt| sed "s/s / /g"| sed "s/ed / /g"; done
+ 1369  l
+ 1370  cat 12066457.txt
+ 1371  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"; done
+ 1372  cat 12066457.txt
+ 1373  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"> file.lemmatized.txt; done
+ 1374  cat 12066457.txt
+ 1375  l
+ 1376  rm file.lemmatized.txt
+ 1377  cat 12066457.txt
+ 1378  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"> $file.lemmatized.txt; done
+ 1379  cat 12066457.lemmatized.txt
+ 1380  l
+ 1381  cat 12066457.txt
+ 1382  cat 12066457.txt.lemmatized.txt
+ 1383  for file in *; do sed -r "s/ing[ ;.,]/ /g" $file> $file.stop; done
+ 1384  cd ..
+ 1385  l
+ 1386  head training.1600000.processed.noemoticon.csv 
+ 1387  vi script.sh
+ 1388  nano script.sh
+ 1389  cat script.sh
+ 1390  cp training.1600000.processed.noemoticon.csv /REVIEWS
+ 1391  l
+ 1392  cp training.1600000.processed.noemoticon.csv REVIEWS
+ 1393  cd REVEIWS
+ 1394  cd REVIEWS
+ 1395  l
+ 1396  mkdir TWEETS
+ 1397  for in in {1..100}; do echo $i; sed -n "${$i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1398  for in in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1399  l
+ 1400  ls
+ 1401  cd TWEETS
+ 1402  l
+ 1403  cd ..
+ 1404  for in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1405  for i in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1406  head -n 200 training.1600000.processed.noemoticon.csv > twitter.200.csv
+ 1407  for i in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1408  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > /TWEETS/tweet.$i.csv;done;
+ 1409  l
+ 1410  head -n 10 twitter.200.csv 
+ 1411  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > /TWEETS/tweet.$i.csv;done;
+ 1412  l
+ 1413  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > TWEETS/tweet.$i.csv;done;
+ 1414  rm -r TWEETS
+ 1415  mkdir TWEETS
+ 1416  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "," '{print$6' | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1417  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "," '{print$6'} | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1418  cd TWEETS
+ 1419  l
+ 1420  cat tweet.100.csv
+ 1421  cd ..
+ 1422  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "\",\"" '{print$6'} | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1423  cd ..
+ 1424  cd REVIEWS/TWEETS
+ 1425  l
+ 1426  cat tweet.100.txt
+ 1427  cat tweet.100.csv
+ 1428  cd ..
+ 1429  comm -12 <(tr " " "\n" < ../ | sort) <(tr " " "\n" < tweet.100.csv | sort)
+ 1430  l
+ 1431  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort)
+ 1432  common = 'comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1433  common= 'comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1434  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort)
+ 1435  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l
+ 1436  common='comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1437  $echo $common
+ 1438  echo $common
+ 1439  common=`comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l`
+ 1440  echo $common
+ 1441  cd ..
+ 1442  nano script.sh
+ 1443  ca script.sh
+ 1444  cat script.sh
+ 1445  cd REVIEWS
+ 1446  if [ $common -gt 1 ]; then cat TWEETS/tweet.100.csv >> 53096219.txt.lemmatized.txt.stop; fi
+ 1447  cat 53096219.txt.lemmatized.txt.stop
+ 1448  for i in *.txt.lemmatized.txt.stop ; do sh myscript $i twitterfile  ; done
+ 1449  for i in *.txt.lemmatized.txt.stop ; do sh ../script.sh $i twitterfile  ; done
+ 1450  cd ..
+ 1451  nano script.sh
+ 1452  cat script.sh
+ 1453  cd REVIEWS
+ 1454  cd..
+ 1455  cd ..
+ 1456  comm -12 <(tr " " "\n" < /REVIEWS/ | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1457  l REVIEWS
+ 1458  comm -12 <(tr " " "\n" < /REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1459  comm -12 <(tr " " "\n" < REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1460  cat script.sh
+ 1461  cd REVIEWS
+ 1462  for i in *.txt.lemmatized.txt.stop ; do sh ../script.sh $i twitterfile  ; done
+ 1463  for i in *.txt.lemmatized.txt.stop ; do sh ~/A4/script.sh $i twitterfile  ; done
+ 1464  for i in *.txt.lemmatized.txt.stop ; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done
+ 1465  comm -12 <(tr " " "\n" < REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1466  l
+ 1467  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1468  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort)
+ 1469  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wccomm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc
+ 1470  for i in *.txt.lemmatized.txt.stop ; for j in `/TWEETS/*`; docomm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc  ; done; done
+ 1471  for i in *.txt.lemmatized.txt.stop ;do for j in `/TWEETS/*`; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done; done
+ 1472  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done; done
+ 1473  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*; do sh ~/A4/script.sh $i $j ; done; done
+ 1474  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;  ; done; done
+ 1475  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc  ; done; done
+ 1476  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1477  for i in *.txt.lemmatized.txt.stop ;do for j in `/TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1478  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1479  ls TWEETS/*
+ 1480  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1481  for i in *.txt.lemmatized.txt.stop ;do for j in 'ls /TWEETS/*';do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1482  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1483  ls TWEETS/*
+ 1484  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1485  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1486  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm -12 <(tr \" \" \"\n" < $i | sort) <(tr \" \" \"\n" < $j | sort) | sort | uniq -c | wc"  ; done; done >commands.txt
+ 1487  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1488  l
+ 1489  wget http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip
+ 1490  l
+ 1491  unzip trainingandtestdata.zip
+ 1492  l
+ 1493  mkdir REVIEWS UNHELPFUL
+ 1494  head -n 1 training.1600000.processed.noemoticon.csv 
+ 1495  cd ..
+ 1496  cd A2
+ 1497  l
+ 1498  cp amazon_reviews_us_Books_v1_02.tsv ~/A4
+ 1499  cd ~/A4
+ 1500  l
+ 1501  head head -n 100 amazon_reviews_us_Books_v1_02.tsv > amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1502  head -n 100 amazon_reviews_us_Books_v1_02.tsv > amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1503  head -n 101 amazon_reviews_us_Books_v1_02.tsv| grep -v helpful_vo  > amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1504  head -2 amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1505  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100l.tsv | awk -f "\t" '{print 9}'
+ 1506  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | awk -f "\t" '{print $9}'
+ 1507  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | awk -F "\t" '{print $9}'
+ 1508  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | awk -F "\t" '{printf "%s,%s\n", $13, $14 > "REVIEWS/" $2 ".txt"}'
+ 1509  l
+ 1510  cd REVIEWS
+ 1511  l
+ 1512  cd ..
+ 1513  rm -rf REVIEWS
+ 1514  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | awk -F "\t" '{printf "%s,%s\n", $13, $14 > "REVIEWS/" $2 ".txt"}'
+ 1515  ls
+ 1516  mkdir REVIEWS
+ 1517  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 > "REVIEWS/" $2 ".txt"}'
+ 1518  l
+ 1519  cd REVIEWS
+ 1520  ls
+ 1521  cd ..
+ 1522  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -100 | awk -F "\t" '{printf "$9"}'
+ 1523  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | awk -F "\t" '{print $9}'
+ 1524  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -10| awk -F "\t" '{print $9}'
+ 1525  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | head -100 | awk -F "\t" '{printf "$9"}'
+ 1526  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | head -100 | awk -F "\t" '{printf $9}'
+ 1527  history
+ 1528  l
+ 1529  head -n 10 amazon_reviews_us_Books_v1_02.headerless.tsv 
+ 1530  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv
+ 1531  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}
+ 1532  '
+ 1533  l /REVIEWS
+ 1534  l /REVIEW
+ 1535  l
+ 1536  l REVIEWS
+ 1537  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"REVIEWS/" $2 ".txt"}'
+ 1538  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"UNHELPFUL/" $2 ".txt"}'
+ 1539  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 10 | awk -F "\t" '{print $9}'
+ 1540  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 100 | awk -F "\t" '{print $9}'
+ 1541  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}
+ 1542  '
+ 1543  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1544  head -n 10 amazon_reviews_us_Books_v1_02.headerless.tsv 
+ 1545  head -n 10 amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1546  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1547  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1548  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1549  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1550  head -n 500 amazon_reviews_us_Books_v1_02.tsv| grep -v helpful_vo  > amazon_reviews_us_Books_v1_02.500lines.tsv 
+ 1551  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1552  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |tail -n 10 | awk -F "\t" '{print $9}'
+ 1553  rm -r REVIEWS UNHELPFUL
+ 1554  l
+ 1555  mkdir REVIEWS UNHELPFUL
+ 1556  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |head -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"UNHELPFUL/" $2 ".txt"}'
+ 1557  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |tail -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"REVIEWS/" $2 ".txt"}'
+ 1558  cd REVIEWS
+ 1559  l
+ 1560  cd ..
+ 1561  l
+ 1562  cd REVIEWS
+ 1563  l
+ 1564  cat 12065385.txt
+ 1565  for i in l; do sed "s/ing / /g" $i.txt; done
+ 1566  for i in ls; do sed "s/ing / /g" $i.txt; done
+ 1567  for file in ls; do sed "s/ing / /g" $file.txt; done
+ 1568  ls
+ 1569  for file in *; do sed "s/ing / /g" $file.txt; done
+ 1570  l
+ 1571  for file in *; do sed "s/ing / /g" $file.txt; done
+ 1572  for file in *; do sed "s/ing / /g" $file; done
+ 1573  l
+ 1574  cat 12065385.txt
+ 1575  sed "s/ing / /g" 12065385.txt
+ 1576  vi test.txt
+ 1577  cat test.txt
+ 1578  sed "s/ing / /g" test.txt
+ 1579  cat 12065385.txt
+ 1580  sed "s/ing / /g" 12065385.txt
+ 1581  sed "s/ing /s / /g" test.txt
+ 1582  sed "s/ing /s/s / /g" test.txt
+ 1583  sed "s/ing / / /g" test.txt
+ 1584  sed "s/ing / /g" test.txt
+ 1585  sed "s/ing /s /g" test.txt
+ 1586  sed "s/ing,s / /g" test.txt
+ 1587  sed "s/ / /g" test.txt
+ 1588  sed "s/ing /s /g" test.txt
+ 1589  sed "s/s / /g" test.txt | 
+ 1590  sed "s/s / /g" 
+ 1591  sed "s/ing /s /g" test.txt
+ 1592  sed "s/ing / /g" test.txt
+ 1593  sed "s/ing\s/s  / /g" test.txt
+ 1594  sed "s/ing\s  / /g" test.txt
+ 1595  sed "s/ing / /g" test.txt
+ 1596  sed "s/ing/s / /g" test.txt
+ 1597  sed "s/ing / /g" test.txt| sed "s/ing / /g"
+ 1598  sed "s/ing / /g" test.txt| sed "s/s / /g"
+ 1599  sed "s/ing / /g" -e  "s/s / /g" test.txt
+ 1600  sed "s/ing / /g" test.txt| sed "s/ing / /g"
+ 1601  sed "s/ing / /g" test.txt| sed "s/s / /g"
+ 1602  vi test.txt
+ 1603  sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"
+ 1604  sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"
+ 1605  for file in *; do sed "s/ing / /g" $file.txt| sed "s/s / /g"| sed "s/ed / /g"; done
+ 1606  l
+ 1607  cat 12066457.txt
+ 1608  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"; done
+ 1609  cat 12066457.txt
+ 1610  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"> file.lemmatized.txt; done
+ 1611  cat 12066457.txt
+ 1612  l
+ 1613  rm file.lemmatized.txt
+ 1614  cat 12066457.txt
+ 1615  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"> $file.lemmatized.txt; done
+ 1616  cat 12066457.lemmatized.txt
+ 1617  l
+ 1618  cat 12066457.txt
+ 1619  cat 12066457.txt.lemmatized.txt
+ 1620  for file in *; do sed -r "s/ing[ ;.,]/ /g" $file> $file.stop; done
+ 1621  cd ..
+ 1622  l
+ 1623  head training.1600000.processed.noemoticon.csv 
+ 1624  vi script.sh
+ 1625  nano script.sh
+ 1626  cat script.sh
+ 1627  cp training.1600000.processed.noemoticon.csv /REVIEWS
+ 1628  l
+ 1629  cp training.1600000.processed.noemoticon.csv REVIEWS
+ 1630  cd REVEIWS
+ 1631  cd REVIEWS
+ 1632  l
+ 1633  mkdir TWEETS
+ 1634  for in in {1..100}; do echo $i; sed -n "${$i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1635  for in in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1636  l
+ 1637  ls
+ 1638  cd TWEETS
+ 1639  l
+ 1640  cd ..
+ 1641  for in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1642  for i in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1643  head -n 200 training.1600000.processed.noemoticon.csv > twitter.200.csv
+ 1644  for i in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1645  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > /TWEETS/tweet.$i.csv;done;
+ 1646  l
+ 1647  head -n 10 twitter.200.csv 
+ 1648  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > /TWEETS/tweet.$i.csv;done;
+ 1649  l
+ 1650  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > TWEETS/tweet.$i.csv;done;
+ 1651  rm -r TWEETS
+ 1652  mkdir TWEETS
+ 1653  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "," '{print$6' | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1654  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "," '{print$6'} | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1655  cd TWEETS
+ 1656  l
+ 1657  cat tweet.100.csv
+ 1658  cd ..
+ 1659  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "\",\"" '{print$6'} | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1660  cd ..
+ 1661  cd REVIEWS/TWEETS
+ 1662  l
+ 1663  cat tweet.100.txt
+ 1664  cat tweet.100.csv
+ 1665  cd ..
+ 1666  comm -12 <(tr " " "\n" < ../ | sort) <(tr " " "\n" < tweet.100.csv | sort)
+ 1667  l
+ 1668  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort)
+ 1669  common = 'comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1670  common= 'comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1671  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort)
+ 1672  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l
+ 1673  common='comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1674  $echo $common
+ 1675  echo $common
+ 1676  common=`comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l`
+ 1677  echo $common
+ 1678  cd ..
+ 1679  nano script.sh
+ 1680  ca script.sh
+ 1681  cat script.sh
+ 1682  cd REVIEWS
+ 1683  if [ $common -gt 1 ]; then cat TWEETS/tweet.100.csv >> 53096219.txt.lemmatized.txt.stop; fi
+ 1684  cat 53096219.txt.lemmatized.txt.stop
+ 1685  for i in *.txt.lemmatized.txt.stop ; do sh myscript $i twitterfile  ; done
+ 1686  for i in *.txt.lemmatized.txt.stop ; do sh ../script.sh $i twitterfile  ; done
+ 1687  cd ..
+ 1688  nano script.sh
+ 1689  cat script.sh
+ 1690  cd REVIEWS
+ 1691  cd..
+ 1692  cd ..
+ 1693  comm -12 <(tr " " "\n" < /REVIEWS/ | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1694  l REVIEWS
+ 1695  comm -12 <(tr " " "\n" < /REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1696  comm -12 <(tr " " "\n" < REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1697  cat script.sh
+ 1698  cd REVIEWS
+ 1699  for i in *.txt.lemmatized.txt.stop ; do sh ../script.sh $i twitterfile  ; done
+ 1700  for i in *.txt.lemmatized.txt.stop ; do sh ~/A4/script.sh $i twitterfile  ; done
+ 1701  for i in *.txt.lemmatized.txt.stop ; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done
+ 1702  comm -12 <(tr " " "\n" < REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1703  l
+ 1704  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1705  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort)
+ 1706  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wccomm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc
+ 1707  for i in *.txt.lemmatized.txt.stop ; for j in `/TWEETS/*`; docomm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc  ; done; done
+ 1708  for i in *.txt.lemmatized.txt.stop ;do for j in `/TWEETS/*`; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done; done
+ 1709  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done; done
+ 1710  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*; do sh ~/A4/script.sh $i $j ; done; done
+ 1711  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;  ; done; done
+ 1712  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc  ; done; done
+ 1713  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1714  for i in *.txt.lemmatized.txt.stop ;do for j in `/TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1715  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1716  ls TWEETS/*
+ 1717  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1718  for i in *.txt.lemmatized.txt.stop ;do for j in 'ls /TWEETS/*';do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1719  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1720  ls TWEETS/*
+ 1721  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1722  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1723  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm -12 <(tr \" \" \"\n" < $i | sort) <(tr \" \" \"\n" < $j | sort) | sort | uniq -c | wc"  ; done; done >commands.txt
+ 1724  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1725  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm -12 <(tr \" \" \"\n" < $i | sort) <(tr \" \" \"\n" < $j | sort) | sort | uniq -c | wc"  ; done; done >commands.txt
+ 1726  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1727  l
+ 1728  wget http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip
+ 1729  l
+ 1730  unzip trainingandtestdata.zip
+ 1731  l
+ 1732  mkdir REVIEWS UNHELPFUL
+ 1733  head -n 1 training.1600000.processed.noemoticon.csv 
+ 1734  cd ..
+ 1735  cd A2
+ 1736  l
+ 1737  cp amazon_reviews_us_Books_v1_02.tsv ~/A4
+ 1738  cd ~/A4
+ 1739  l
+ 1740  head head -n 100 amazon_reviews_us_Books_v1_02.tsv > amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1741  head -n 100 amazon_reviews_us_Books_v1_02.tsv > amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1742  head -n 101 amazon_reviews_us_Books_v1_02.tsv| grep -v helpful_vo  > amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1743  head -2 amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1744  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100l.tsv | awk -f "\t" '{print 9}'
+ 1745  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | awk -f "\t" '{print $9}'
+ 1746  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | awk -F "\t" '{print $9}'
+ 1747  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | awk -F "\t" '{printf "%s,%s\n", $13, $14 > "REVIEWS/" $2 ".txt"}'
+ 1748  l
+ 1749  cd REVIEWS
+ 1750  l
+ 1751  cd ..
+ 1752  rm -rf REVIEWS
+ 1753  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | awk -F "\t" '{printf "%s,%s\n", $13, $14 > "REVIEWS/" $2 ".txt"}'
+ 1754  ls
+ 1755  mkdir REVIEWS
+ 1756  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 > "REVIEWS/" $2 ".txt"}'
+ 1757  l
+ 1758  cd REVIEWS
+ 1759  ls
+ 1760  cd ..
+ 1761  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -100 | awk -F "\t" '{printf "$9"}'
+ 1762  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | awk -F "\t" '{print $9}'
+ 1763  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv | head -10| awk -F "\t" '{print $9}'
+ 1764  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | head -100 | awk -F "\t" '{printf "$9"}'
+ 1765  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv | head -100 | awk -F "\t" '{printf $9}'
+ 1766  history
+ 1767  l
+ 1768  head -n 10 amazon_reviews_us_Books_v1_02.headerless.tsv 
+ 1769  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv
+ 1770  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}
+ 1771  '
+ 1772  l /REVIEWS
+ 1773  l /REVIEW
+ 1774  l
+ 1775  l REVIEWS
+ 1776  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"REVIEWS/" $2 ".txt"}'
+ 1777  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"UNHELPFUL/" $2 ".txt"}'
+ 1778  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 10 | awk -F "\t" '{print $9}'
+ 1779  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |tail -n 100 | awk -F "\t" '{print $9}'
+ 1780  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}
+ 1781  '
+ 1782  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1783  head -n 10 amazon_reviews_us_Books_v1_02.headerless.tsv 
+ 1784  head -n 10 amazon_reviews_us_Books_v1_02.100lines.tsv 
+ 1785  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1786  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1787  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.headerless.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1788  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.100lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1789  head -n 500 amazon_reviews_us_Books_v1_02.tsv| grep -v helpful_vo  > amazon_reviews_us_Books_v1_02.500lines.tsv 
+ 1790  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |head -n 10 | awk -F "\t" '{print $9}'
+ 1791  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |tail -n 10 | awk -F "\t" '{print $9}'
+ 1792  rm -r REVIEWS UNHELPFUL
+ 1793  l
+ 1794  mkdir REVIEWS UNHELPFUL
+ 1795  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |head -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"UNHELPFUL/" $2 ".txt"}'
+ 1796  sort -t "	" -n -k 9 amazon_reviews_us_Books_v1_02.500lines.tsv |tail -n 100 | awk -F "\t" '{printf "%s,%s\n", $13, $14 >"REVIEWS/" $2 ".txt"}'
+ 1797  cd REVIEWS
+ 1798  l
+ 1799  cd ..
+ 1800  l
+ 1801  cd REVIEWS
+ 1802  l
+ 1803  cat 12065385.txt
+ 1804  for i in l; do sed "s/ing / /g" $i.txt; done
+ 1805  for i in ls; do sed "s/ing / /g" $i.txt; done
+ 1806  for file in ls; do sed "s/ing / /g" $file.txt; done
+ 1807  ls
+ 1808  for file in *; do sed "s/ing / /g" $file.txt; done
+ 1809  l
+ 1810  for file in *; do sed "s/ing / /g" $file.txt; done
+ 1811  for file in *; do sed "s/ing / /g" $file; done
+ 1812  l
+ 1813  cat 12065385.txt
+ 1814  sed "s/ing / /g" 12065385.txt
+ 1815  vi test.txt
+ 1816  cat test.txt
+ 1817  sed "s/ing / /g" test.txt
+ 1818  cat 12065385.txt
+ 1819  sed "s/ing / /g" 12065385.txt
+ 1820  sed "s/ing /s / /g" test.txt
+ 1821  sed "s/ing /s/s / /g" test.txt
+ 1822  sed "s/ing / / /g" test.txt
+ 1823  sed "s/ing / /g" test.txt
+ 1824  sed "s/ing /s /g" test.txt
+ 1825  sed "s/ing,s / /g" test.txt
+ 1826  sed "s/ / /g" test.txt
+ 1827  sed "s/ing /s /g" test.txt
+ 1828  sed "s/s / /g" test.txt | 
+ 1829  sed "s/s / /g" 
+ 1830  sed "s/ing /s /g" test.txt
+ 1831  sed "s/ing / /g" test.txt
+ 1832  sed "s/ing\s/s  / /g" test.txt
+ 1833  sed "s/ing\s  / /g" test.txt
+ 1834  sed "s/ing / /g" test.txt
+ 1835  sed "s/ing/s / /g" test.txt
+ 1836  sed "s/ing / /g" test.txt| sed "s/ing / /g"
+ 1837  sed "s/ing / /g" test.txt| sed "s/s / /g"
+ 1838  sed "s/ing / /g" -e  "s/s / /g" test.txt
+ 1839  sed "s/ing / /g" test.txt| sed "s/ing / /g"
+ 1840  sed "s/ing / /g" test.txt| sed "s/s / /g"
+ 1841  vi test.txt
+ 1842  sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"
+ 1843  sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"sed "s/ing / /g" test.txt| sed "s/s / /g"| sed "s/ed / /g"
+ 1844  for file in *; do sed "s/ing / /g" $file.txt| sed "s/s / /g"| sed "s/ed / /g"; done
+ 1845  l
+ 1846  cat 12066457.txt
+ 1847  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"; done
+ 1848  cat 12066457.txt
+ 1849  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"> file.lemmatized.txt; done
+ 1850  cat 12066457.txt
+ 1851  l
+ 1852  rm file.lemmatized.txt
+ 1853  cat 12066457.txt
+ 1854  for file in *; do sed "s/ing / /g" $file| sed "s/s / /g"| sed "s/ed / /g"> $file.lemmatized.txt; done
+ 1855  cat 12066457.lemmatized.txt
+ 1856  l
+ 1857  cat 12066457.txt
+ 1858  cat 12066457.txt.lemmatized.txt
+ 1859  for file in *; do sed -r "s/ing[ ;.,]/ /g" $file> $file.stop; done
+ 1860  cd ..
+ 1861  l
+ 1862  head training.1600000.processed.noemoticon.csv 
+ 1863  vi script.sh
+ 1864  nano script.sh
+ 1865  cat script.sh
+ 1866  cp training.1600000.processed.noemoticon.csv /REVIEWS
+ 1867  l
+ 1868  cp training.1600000.processed.noemoticon.csv REVIEWS
+ 1869  cd REVEIWS
+ 1870  cd REVIEWS
+ 1871  l
+ 1872  mkdir TWEETS
+ 1873  for in in {1..100}; do echo $i; sed -n "${$i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1874  for in in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1875  l
+ 1876  ls
+ 1877  cd TWEETS
+ 1878  l
+ 1879  cd ..
+ 1880  for in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1881  for i in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1882  head -n 200 training.1600000.processed.noemoticon.csv > twitter.200.csv
+ 1883  for i in {1..100}; do echo $i; sed -n "${i}p" training.1600000.processed.noemoticon.csv > /TWEETS/tweet.$i.csv;done;
+ 1884  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > /TWEETS/tweet.$i.csv;done;
+ 1885  l
+ 1886  head -n 10 twitter.200.csv 
+ 1887  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > /TWEETS/tweet.$i.csv;done;
+ 1888  l
+ 1889  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv > TWEETS/tweet.$i.csv;done;
+ 1890  rm -r TWEETS
+ 1891  mkdir TWEETS
+ 1892  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "," '{print$6' | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1893  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "," '{print$6'} | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1894  cd TWEETS
+ 1895  l
+ 1896  cat tweet.100.csv
+ 1897  cd ..
+ 1898  for i in {1..100}; do echo $i; sed -n "${i}p" twitter.200.csv | awk -F "\",\"" '{print$6'} | sed 's/^"//g' | sed 's/$//g'  > TWEETS/tweet.$i.csv;done;
+ 1899  cd ..
+ 1900  cd REVIEWS/TWEETS
+ 1901  l
+ 1902  cat tweet.100.txt
+ 1903  cat tweet.100.csv
+ 1904  cd ..
+ 1905  comm -12 <(tr " " "\n" < ../ | sort) <(tr " " "\n" < tweet.100.csv | sort)
+ 1906  l
+ 1907  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort)
+ 1908  common = 'comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1909  common= 'comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1910  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort)
+ 1911  comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l
+ 1912  common='comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l'
+ 1913  $echo $common
+ 1914  echo $common
+ 1915  common=`comm -12 <(tr " " "\n" < 53096219.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < TWEETS/tweet.100.csv | sort) | wc -l`
+ 1916  echo $common
+ 1917  cd ..
+ 1918  nano script.sh
+ 1919  ca script.sh
+ 1920  cat script.sh
+ 1921  cd REVIEWS
+ 1922  if [ $common -gt 1 ]; then cat TWEETS/tweet.100.csv >> 53096219.txt.lemmatized.txt.stop; fi
+ 1923  cat 53096219.txt.lemmatized.txt.stop
+ 1924  for i in *.txt.lemmatized.txt.stop ; do sh myscript $i twitterfile  ; done
+ 1925  for i in *.txt.lemmatized.txt.stop ; do sh ../script.sh $i twitterfile  ; done
+ 1926  cd ..
+ 1927  nano script.sh
+ 1928  cat script.sh
+ 1929  cd REVIEWS
+ 1930  cd..
+ 1931  cd ..
+ 1932  comm -12 <(tr " " "\n" < /REVIEWS/ | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1933  l REVIEWS
+ 1934  comm -12 <(tr " " "\n" < /REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1935  comm -12 <(tr " " "\n" < REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1936  cat script.sh
+ 1937  cd REVIEWS
+ 1938  for i in *.txt.lemmatized.txt.stop ; do sh ../script.sh $i twitterfile  ; done
+ 1939  for i in *.txt.lemmatized.txt.stop ; do sh ~/A4/script.sh $i twitterfile  ; done
+ 1940  for i in *.txt.lemmatized.txt.stop ; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done
+ 1941  comm -12 <(tr " " "\n" < REVIEWS/53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1942  l
+ 1943  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" < REVIEWS/TWEETS/tweet.1.csv | sort)
+ 1944  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort)
+ 1945  comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wccomm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc
+ 1946  for i in *.txt.lemmatized.txt.stop ; for j in `/TWEETS/*`; docomm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc  ; done; done
+ 1947  for i in *.txt.lemmatized.txt.stop ;do for j in `/TWEETS/*`; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done; done
+ 1948  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*; do sh ~/A4/script.sh $i TWEETS/tweet.1.csv  ; done; done
+ 1949  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*; do sh ~/A4/script.sh $i $j ; done; done
+ 1950  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;  ; done; done
+ 1951  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < 53094054.txt.lemmatized.txt.stop | sort) <(tr " " "\n" <TWEETS/tweet.1.csv | sort) | sort | uniq -c | wc  ; done; done
+ 1952  for i in *.txt.lemmatized.txt.stop ;do for j in /TWEETS/*;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1953  for i in *.txt.lemmatized.txt.stop ;do for j in `/TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1954  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1955  ls TWEETS/*
+ 1956  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*`;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1957  for i in *.txt.lemmatized.txt.stop ;do for j in 'ls /TWEETS/*';do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1958  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS/*` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1959  ls TWEETS/*
+ 1960  for i in *.txt.lemmatized.txt.stop ;do for j in `ls /TWEETS` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1961  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "compaing $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1962  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm -12 <(tr \" \" \"\n" < $i | sort) <(tr \" \" \"\n" < $j | sort) | sort | uniq -c | wc"  ; done; done >commands.txt
+ 1963  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1964  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm -12 <(tr \" \" \"\n" < $i | sort) <(tr \" \" \"\n" < $j | sort) | sort | uniq -c | wc"  ; done; done >commands.txt
+ 1965  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm $i against $j" ; comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc  ; done; done
+ 1966  for i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm -12 <(tr \" \" \"\n\" < $i | sort) <(tr \" \" \"\n\" < $j | sort) | sort | uniq -c | wc -l"  ; done; done > commands.txtfor i in *.txt.lemmatized.txt.stop ;do for j in `ls TWEETS/*` ;do echo "comm -12 <(tr \" \" \"\n\" < $i | sort) <(tr \" \" \"\n\" < $j | sort) | sort | uniq -c | wc -l"  ; done; done > commands.txt
+ 1967  cat commands.txt
+ 1968  cd ..
+ 1969  nano script.sh
+ 1970  cd REVIEWS
+ 1971  time parallel <commands.txt
+ 1972  install parallel
+ 1973  time parallel <commands.txt
+ 1974  apt install parallel
+ 1975  y
+ 1976  apt install parallel
+ 1977  cd A4
+ 1978  l
+ 1979  tmux attach
+ 1980  rm a4.txt
+ 1981  tmux attach
+ 1982  tmux
+ 1983  script a4.txt
+ 1984  perl -pe 's/\x1b\[[0-9;]*[mG]//g' a4.txt > a4.txt.clean
+ 1985  tr -cd '\11\12\15\40-\176' < a4.txt.clean > a4.txt.clean2
+ 1986  git init
+ 1987  git add a4.txt.clean2
+ 1988  git status
+ 1989  git commit -m "Assignment 4"
+ 1990  git remote add origin https://github.com/mahir24/a4.git
+ 1991  git push -u origin main
+ 1992  git push -u origin master
+ 1993  vi randomsample.sh
+ 1994  cat randomsample.sh
+ 1995  cd ..
+ 1996  cd WS9
+ 1997  cd ..
+ 1998  cd A4
+ 1999  cp amazon_reviews_us_Books_v1_02.tsv ~/WS9
+ 2000  cd ../WS9
+ 2001  l
+ 2002  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2003  chmod randomsample.sh
+ 2004  chmod -x randomsample.sh
+ 2005  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2006  l
+ 2007  chmod x randomsample.sh
+ 2008  chmod --help
+ 2009  chmod 777 randomsample.sh
+ 2010  l
+ 2011  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2012  vi randomsample.sh
+ 2013  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2014  vi randomsample.sh
+ 2015  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2016  l
+ 2017  vi randomsample.sh
+ 2018  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2019  vi randomsample.sh
+ 2020  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2021  vi randomsample.sh
+ 2022  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2023  vi randomsample.sh
+ 2024  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2025  vi randomsample.sh
+ 2026  nano randomsample.sh
+ 2027  vi randomsample.sh
+ 2028  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2029  vi randomsample.sh
+ 2030  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2031  vi randomsample.sh
+ 2032  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2033  vi randomsample.sh
+ 2034  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2035  vi randomsample.sh
+ 2036  ./randomsample.sh 50 amazon_reviews_us_Books_v1_02.tsv 
+ 2037  history > cmds.log
